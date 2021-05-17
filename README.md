@@ -9,13 +9,13 @@ unittest/functions_test.py에서는 사칙연산 함수를 테스트 해볼 수 
    ```shell
     git clone https://github.com/scy6500/devops-eng-training.git
     ```
-2. 패키지 설치
+2. 도커 파일 빌드
    ```shell
-    pip install -r requirements.txt
+    docker build -t devops:1.0 .
     ```
-3. 웹서버 실행  
+3. 도커 파일 실행
    ```shell
-    python app.py
+    docker run -p 5000:5000 devops:1.0 
     ```
 4. 서버에 요청 보내기  
    덧셈
