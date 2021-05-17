@@ -9,20 +9,34 @@ import functions
 
 
 def test_add():
-    prediction = functions.add_function(6, 2)
-    assert prediction == 8
+    assert functions.add_function("6", "2") == 8
+    assert functions.add_function("6", "string") == "check parameter"
+    assert functions.add_function("string", "2") == "check parameter"
+    assert functions.add_function("string", "string") == "check parameter"
 
 
 def test_subtract():
-    predict = functions.subtract_function(6, 2)
-    assert predict == 4
+    assert functions.subtract_function("6", "2") == 4
+    assert functions.subtract_function("6", "string") == "check parameter"
+    assert functions.subtract_function("string", "2") == "check parameter"
+    assert functions.subtract_function("string", "string") == "check parameter"
 
 
 def test_multiply():
-    prediction = functions.multiply_function(6, 2)
-    assert prediction == 12
+    assert functions.multiply_function("6", "2") == 12
+    assert functions.multiply_function("6", "string") == "check parameter"
+    assert functions.multiply_function("string", "2") == "check parameter"
+    assert functions.multiply_function("string", "string") == "check parameter"
 
 
 def test_division():
-    prediction = functions.division_function(6, 2)
-    assert prediction == 3
+    assert functions.division_function("6", "2") == 3
+    assert functions.division_function("6", "string") == "check parameter"
+    assert functions.division_function("string", "2") == "check parameter"
+    assert functions.division_function("string", "string") == "check parameter"
+
+
+def test_sqrt():
+    assert functions.sqrt_function("4") == 2.0
+    assert functions.sqrt_function("string") == "check parameter"
+
