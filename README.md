@@ -34,6 +34,10 @@ unittest/functions_test.py에서는 사칙연산 함수를 테스트 해볼 수 
    ```shell
     curl -X GET 'http://localhost:5000/division?num1=10&num2=2'
     ```
+   제곱근
+   ```shell
+    curl -X GET 'http://localhost:5000/sqrt?num=10'
+    ```
 
 ### 3. 테스트 방법
 1. 사칙연산 함수 테스트
